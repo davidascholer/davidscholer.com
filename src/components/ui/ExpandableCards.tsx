@@ -2,11 +2,11 @@
  * Dependencies:
  * npm i motion clsx tailwind-merge
  */
-"use client"
+"use client";
 
-import React, { useEffect, useId, useRef, useState } from "react"
-import { AnimatePresence, motion } from "motion/react"
-import { useOutsideClick } from "../hooks/use-outside-click"
+import React, { useEffect, useId, useRef, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { useOutsideClick } from "../hooks/use-outside-click";
 
 interface Card {
   title: string;
@@ -17,29 +17,37 @@ interface Card {
   content: string | (() => React.ReactNode);
 }
 
-export default function ExpandableCards({ cards }: { cards: Card[] }) {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null)
-  const ref = useRef<HTMLDivElement>(null)
-  const id = useId()
+export default function ExpandableCards({
+  cards,
+  isOpen,
+}: {
+  cards: Card[];
+  isOpen?: boolean;
+}) {
+  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+    null
+  );
+  const ref = useRef<HTMLDivElement>(null);
+  const id = useId();
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setActive(false)
+        setActive(false);
       }
     }
 
     if (active && typeof active === "object") {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"
+      document.body.style.overflow = "auto";
     }
 
-    window.addEventListener("keydown", onKeyDown)
-    return () => window.removeEventListener("keydown", onKeyDown)
-  }, [active])
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [active]);
 
-  useOutsideClick(ref, () => setActive(null))
+  useOutsideClick(ref, () => setActive(null));
 
   return (
     <>
@@ -49,7 +57,7 @@ export default function ExpandableCards({ cards }: { cards: Card[] }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/20 h-full w-full z-10"
+            className="fixed inset-0 bg-black/20 h-full w-full z-10 "
           />
         )}
       </AnimatePresence>
@@ -126,7 +134,9 @@ export default function ExpandableCards({ cards }: { cards: Card[] }) {
                     exit={{ opacity: 0 }}
                     className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
-                    {typeof active.content === "function" ? active.content() : active.content}
+                    {typeof active.content === "function"
+                      ? active.content()
+                      : active.content}
                   </motion.div>
                 </div>
               </div>
@@ -152,7 +162,13 @@ export default function ExpandableCards({ cards }: { cards: Card[] }) {
                   className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
                 />
               </motion.div>
-              <div className="">
+              <div
+                className={
+                  isOpen
+                    ? "opacity-0 transition-opacity duration-50 ease-in-out"
+                    : "opacity-100 transition-opacity duration-500 ease-in-out"
+                }
+              >
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
                   className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
@@ -177,7 +193,7 @@ export default function ExpandableCards({ cards }: { cards: Card[] }) {
         ))}
       </ul>
     </>
-  )
+  );
 }
 
 export const CloseIcon = () => {
@@ -210,6 +226,5 @@ export const CloseIcon = () => {
       <path d="M18 6l-12 12" />
       <path d="M6 6l12 12" />
     </motion.svg>
-  )
-}
-
+  );
+};

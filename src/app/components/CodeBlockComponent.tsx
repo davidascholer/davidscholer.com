@@ -3,35 +3,110 @@
 import { CodeBlock } from "@/components/ui/CodeBlock";
 
 export default function CodeBlockComponent() {
-  const code = `const DummyComponent = () => {
-  const [count, setCount] = React.useState(0);
+  const readme = `
+# A few notes on code and file structure
+ ** I'm a strong believer in type safety and intelisense. ** 
+ ** I believe all functions (with exceptions) should have high cohesion. ** 
+ ** Folder structure theory. I believe a folder structure should: ** 
+ - Be clearly organized.
+ - Be well communicated and documented.
+ - Be modular where appropriate.
+ - Refrain from high coupling.
+ - Have share permissions for each folder.
+ - Be enforced with a linter for larger projects.
+ `;
 
-  const handleClick = () => {
-    setCount(prev => prev + 1);
-  };
+  const constants = `
+export const DEBUG = process.env.NODE_ENV !== "production";
+export const BASE_API_URL = "https://someapi.com/api/v1/";
+`;
 
-  return (
-    <div className="p-4 border rounded-lg">
-      <h2 className="text-xl font-bold mb-4">Fights Counter</h2>
-      <p className="mb-2">Fight Club Fights Count: {count}</p>
-      <button 
-        onClick={handleClick}
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >
-        Increment
-      </button>
-    </div>
-  );
+  const types = `
+export type ResourceTypes = "someApiResource1" | "someApiResource2" | "someApiResource3";
+export type ApiType = {
+  url: string;
+  resource: ResourceTypes;
+  searchParams: Record<string, string>;
 };
 `;
 
+  const utils =
+    `
+/**
+ * * Utility function to get the URL string from an object
+ * @param obj - The object containing the URL and search parameters
+ * @returns The URL string with search parameters
+ */
+export const getUrlStringFromObject = (obj: ApiType) => {
+//...
+}
+
+/**
+ * * Utility to fetch data from a search URL
+ * @param searchUrl - The URL string to fetch data from
+ * @returns The data fetched from the URL
+ */
+export const getDataFromSearchUrl = async (searchUrl: string) => {
+  // Return a generic error if the fetch fails
+  try {
+    const response = await fetch(searchUrl, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        Authorization: ` +
+    "Bearer${process.env.PUBLIC_API_KEY}" +
+    `,
+      },
+      body: JSON.stringify(searchUrl),
+    });
+
+    // Parse the response
+    const data = await response.json();
+    if (!response.ok) {
+      if (DEBUG) console.debug("getListFromSearch data", data);
+      throw new Error(data.error || "Failed to fetch data");
+    }
+    return data.objectIDs;
+  } catch (error) {
+    if (DEBUG) console.error("Error fetching data:", error);
+    throw new Error("Failed to fetch data");
+  }
+};
+
+//...
+`;
+
+  const component = `
+const ListItem = ({ item }: { item: ApiType }) => {
+//...
+};
+
+const ApiPage = () => {
+//...
+}
+`;
+
   return (
-    <div className="max-w-3xl mx-auto w-full">
+    <div className="mx-auto flex flex-col gap-4">
+      <h1 className="text-4xl font-semibold text-black dark:text-white mb-8 text-center p-2 mt-16">
+        A quick look at my code standards and practices
+      </h1>
+
+      <CodeBlock language="md" filename="README.md" code={readme} />
+      <CodeBlock language="ts" filename="constants.ts" code={constants} />
+      <CodeBlock language="ts" filename="types.ts" code={types} />
       <CodeBlock
-        language="jsx"
-        filename="DummyComponent.jsx"
-        highlightLines={[9, 13, 14, 18]}
-        code={code}
+        language="ts"
+        filename="utils.ts"
+        highlightLines={[8, 42]}
+        code={utils}
+      />
+      <CodeBlock
+        language="tsx"
+        filename="ApiPage.tsx"
+        highlightLines={[3, 7]}
+        code={component}
       />
     </div>
   );

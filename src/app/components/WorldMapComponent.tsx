@@ -1,18 +1,18 @@
-"use client"
-import WorldMap from "@/components/ui/WorldMap"
-import { motion } from "motion/react"
+"use client";
+import WorldMap from "@/components/ui/WorldMap";
+import { motion } from "motion/react";
 
 export default function WorldMapComponent() {
   return (
-    <div className=" py-40 dark:bg-black bg-white w-full">
+    <div className=" py-40 dark:bg-black bg-white w-full rounded-xl">
       <div className="max-w-7xl mx-auto text-center">
-        <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
-          Remote{" "}
+        <p className="font-bold text-2xl md:text-4xl dark:text-white text-black">
+          Dev{" "}
           <span className="text-neutral-400">
-            {"Connectivity".split("").map((word, idx) => (
+            {"Ops".split("").map((word, idx) => (
               <motion.span
                 key={idx}
-                className="inline-block"
+                className="inline-block text-primary"
                 initial={{ x: -10, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: idx * 0.04 }}
@@ -22,10 +22,11 @@ export default function WorldMapComponent() {
             ))}
           </span>
         </p>
-        <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
-          Break free from traditional boundaries. Work from anywhere, at the comfort of your own studio apartment.
-          Perfect for Nomads and Travellers.
-        </p>
+        <h1 className="text-4xl font-semibold text-black dark:text-white mb-8 text-center p-2 mt-16">
+          My experience with CDNs such as AWS Cloudfront and Cloudflare can help
+          get your software up and running globally with low latency and high
+          availability.
+        </h1>
       </div>
       <WorldMap
         dots={[
@@ -62,5 +63,5 @@ export default function WorldMapComponent() {
         ]}
       />
     </div>
-  )
+  );
 }

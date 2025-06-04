@@ -1,0 +1,356 @@
+David Scholer
+
+Cover Letter
+
+-	-	-	-	-	-	-	-	-	-
+
+Hello! I am David, a multi-device, full-stack, senior front-end
+software engineer. I have experience programming all kinds of
+devices: micro-controllers, POS systems, phones, smart watches,
+car apps, desktop apps, UPS scanners, and others. I also have
+extensive experience building web applications, web sites, and
+mobile apps.
+
+I started my path by originally studying Electrical Engineering in
+college. My studies and being on the robotics club helped give me
+a foundation of understanding how the technologies that we use
+work from the physical layer to the application layer. While
+attending college, I wrote a number of UIs and animation intensive
+websites using core vanilla web technologies. Along with my
+studies of Networking, working with Linux, and some experience
+in graphic design, I have solidified my understanding of how
+front-end technologies work on a lower level, though I'm always
+still learning something new.
+
+
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+
+
+Resume
+-	-	-	-	-	-	-	-	-	-
+
+Contact and Social:
+name: David Scholer
+title: Senior front end, full stack software engineer and embedded systems developer
+location: Seattle, WA
+phone: 206 931 3594
+email: DavidAScholer@gmail.com
+github: github.com/davidascholer
+linkedIn: linkedin.com/in/david-scholer
+
+
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+
+About:
+A scalpel on the front end, proficient on the back end, with a decade of experience writing software.
+When I'm not writing code, I'm growing my knowledge of computer networking, electronics
+engineering, and getting up to speed with AI/LLMs.
+In short, I am a believer in a growth mindset, open communication, and a hard days work.
+
+
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+
+Front End Skills:
+-	-	-	-	-	-	-	-	-	-
+UI/UX Design
+System Design
+Project Management
+Source Control
+Web Technologies
+Graphic Design
+Api Integration
+Authentication
+Caching
+Linting
+State Management
+Component Testing
+Unit Testing
+Automation Testing
+Containerization
+Bundlers
+Native Mobile Development
+CI/CD
+CDNs
+
+
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+
+
+Comprehensive Programming Experience
+
+-	-	-	-	-	-	-	-	-	-
+
+Languages:
+Typescript/
+Javascript/
+ES6
+Python
+Bash
+Java
+HTML
+CSS
+C
+SQL
+Kotlin
+Swift
+Objective-C
+XML
+Ruby
+
+-	-	-	-	-	-	-	-	-	-
+
+
+Micro-controllers:
+ATMEGA128
+ESP32
+
+-	-	-	-	-	-	-	-	-	-
+
+
+Testing Frameworks:
+Jest
+React Testing Library
+Storybook
+Playwright
+Selenium
+Puppeteer
+Pytest
+Mocha
+Cypress
+
+-	-	-	-	-	-	-	-	-	-
+
+Fundamental Concepts:
+Linux
+Design Patterns
+Data Structures
+Common Algorithms
+Networking
+System Architecture:
+
+-	-	-	-	-	-	-	-	-	-
+
+Deployment and CI/CD:
+Git
+Flask
+Terraform
+Ansible
+Jenkins
+Github Actions
+Nginx
+Gunicorn
+
+-	-	-	-	-	-	-	-	-	-
+
+Database Technologies:
+PostgresQL
+MySQL
+SQLite
+Psycopg
+SQLAlchemy
+DjangoORM
+MongoDB
+Prisma
+
+-	-	-	-	-	-	-	-	-	-
+
+CDNs:
+AWS
+Heroku
+Google Cloud
+On-prem
+
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+
+
+Relevant Work Experience:
+
+-	-	-	-	-	-	-	-	-	-
+
+SocketShock LLC
+Founder
+2024 - present
+
+SocketShock is my LLC. Under the name, I run multiple endeavors:
+
+David Scholer
+- Contract work and freelance projects.
+ApiUFO
+- A series of many API focused applications I have deployed. These apps include a variety of marketing strategies including affiliate marketing and ads.
+HackRec
+- Video walk-throughs of popular programming libraries. This one has low monetary gain so I don't get around to working on this much.
+
+-	-	-	-	-	-	-	-	-	-
+
+Nimbio Labs
+Software Engineer II
+2022 - 2024
+
+Nimbio Labs is a software company that also had it's own hardware. We specialized in security tech for property access for both home and commercial use. My main position at Nimbio was working with other companies to build and integrate APIs to connect their services and products with ours. The two most prominent companies I worked alongside with were UPS and Alfred Inc. Outside of the API integrations, my other major role was the primary site reliability engineer. I would create new features, fix and refactor existing bugs, and assist with maintaining the mobile app for Android and iOS.
+
+I had a great time at Nimbio. It challenged me perfectly and I grew so much. My biggest claim to fame working there was I built an app for UPS with near perfect QA reviews. UPS drivers in New York City still use it on a daily basis saving them up to hours a day.
+
+Management shakeups within USPS seized an ongoing contract negotiation causing funding to be pulled. 95% of the staff were laid off including the CEO. Otherwise, I would have loved to have stayed in that role.
+
+
+-	-	-	-	-	-	-	-	-	-
+
+Agora
+Full Stack Developer
+2022
+
+Agora was essentially a contract position based out of Vancouver, B.C. I worked on a website that sold physical goods from private sellers to customers, similar to Etsy for concert attire. I implemented the payment system (Stripe) and the shipping API (2Ship). My tenure at Agora didn't end well. They hit some funding issues and after a late paycheck that I had been waiting for for over three weeks and counting, I was obligated to refuse to work any further until I was paid. I left short-after.
+
+My time there wasn't all bad, however, as I did gain the experience and was able to implement some APIs for production.
+
+-	-	-	-	-	-	-	-	-	-
+
+Vamplitude
+Full Stack Developer
+2017 - 2022
+
+Vamplitude is the name I previously used for writing freelance software and e-commerce applications before creating my LLC. During this time, I created many websites, website integrations, and applications for IOS, Android, Clover and Square.
+
+-	-	-	-	-	-	-	-	-	-
+
+Ladro
+Manager
+2014 - 2020
+
+I ran a high volume coffee shop next to the Space Needle while finishing up school and getting my programming career rolling. While this isn't a programming specific job, it was absolutely vital to helping me expand my management experience and team leadership skills. Being a team mediator, training employees, organizing people, ensuring the employees were efficient but still maintained a healthy work/life balance were all hard skills that translate to any management position.
+
+This position was more small business owner than manager. I was responsible for hiring, training, and managing a team of 10+ employees in a fast-paced environment. I was responsible for all of the day-to-day operations of the store including: keeping track of all of the financial data, training, inventory, and scheduling. Utilizing my software skills, I wrote custom software to help me with inventory, scheduling, and waste that led to increased profit margins every quarter while I was there.
+
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+
+Selected Projects:
+
+-	-	-	-	-	-	-	-	-	-
+
+The Nimbio App
+nimbio.com
+
+I am not the core creator of the Nimbio app but I
+have refactored roughly 80% of the front-end code
+base throughout my time at Nimbio and created
+the new UI, working alongside our graphic designer
+and QA team. Both the mobile app and web app use
+websockets for a persistent connection. I also fully
+implemented native modules into the mobile
+releases allowing React Native to interact with the
+device hardware, bridging the gap between writing
+the code in React Native versus their native
+Swift/ObjC (iOS) and Kotlin/Java (Android).
+
+- Live data updates (wss)
+- Swift
+- Kotlin
+- Typescript
+- Redux
+- Graphic Design
+- UI
+- Python
+- Micro-controllers
+- Ansible
+- Nginx
+
+-	-	-	-	-	-	-	-	-	-
+
+DillFresh
+dillfresh.com
+
+Dill Fresh is my latest project. This is an app designed for mobile devices, built for a client where I served as the project manager as well as handling the CI/CD pipeline and deployment. It is currently in beta and is seeking funding but is live for demo.
+
+- React 19 and React Native Front End
+- Python/Django and PostgresQL back end
+- Google APIs
+- Testing: Unit, End-to-end, Regression
+- Persistent Data Updates (http)
+- Anayltics - Notifications
+- SMTP
+
+-	-	-	-	-	-	-	-	-	-
+
+Vamplitude
+vamplitude.com
+
+I like to call Vamplitude my "front end fun house". I wrote it in college using vanilla Javascript, HTML, and CSS. I haven't touched it since and it still works great as it has zero dependencies. I still use it to showcase my variety of foundational skills including my front end skill set, core programming skills, graphic design, complex animations, 3d rendering, responsive design, interactive display, and a few other things. As stated, it's kind of a fun house.
+
+- Vanilla JS 
+- Responsive
+- HTML 
+- Graphic Design
+
+-	-	-	-	-	-	-	-	-	-
+
+The Met Collection
+themet.apiufo.com
+
+An example of one of my API focused applications in production. I have many like it. The front ends use caching and common layout practices utilizing popular front-end frameworks and UI libraries. This one has most of the features one would need for API functionality: pagination, menu options, filter options, and a search bar, to name a few. The API used here is from the Metropolitan Museum of Art in New York City, one of my favorite museums. I can do these types of apps in my sleep. Sometimes, I do!
+
+- APIs
+- Caching
+- Authentication
+- CRUD (PostgresQL)
+- Versioning
+- Source Control
+- DevOps
+
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+
+Education:
+
+-	-	-	-	-	-	-	-	-	-
+
+Seattle Central College
+Associate Of Science - Dean's List
+2008-2017
+
+While in school, I maintained a respectable gpa while working 40+ hours a week to pay tuition, rent, and other bills. I had to take many breaks to save up money to keep my head above water. Many of my professors at Seattle Central had taught or were teaching at UW as well so I spent close to 5 cumulative years (in terms of credits) there concurrently working on my bachelor's degree at a cheaper tuition rate and smaller class sizes. 
+
+
+-	-	-	-	-	-	-	-	-	-
+
+University of Washington
+Electrical Engineering - Incomplete
+2017-2018
+
+I had attempted to complete my bachelor's degree but having no financial help, the tuition and course load were too much to handle at the same time. Everything I have learned since college significantly outweighs my final year of course material. College was just the beginning of my true studies in software engineering and app development. 
+
+-	-	-	-	-	-	-	-	-	-
+
+North Seattle College
+Full Stack Developer Certification
+2018
+
+In lieu of my last year at University, I took the Full Stack Developer Certification course at North Seattle College. I already had nearly all of the required classes needed so the tuition was doable. It was a great experience and I learned a lot. 
+
+
+-	-	-	-	-	-	-	-	-	-
+-	-	-	-	-	-	-	-	-	-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

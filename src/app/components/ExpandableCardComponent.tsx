@@ -1,13 +1,56 @@
-"use client"
+"use client";
 import ExpandableCards from "@/components/ui/ExpandableCards";
 
 const cards = [
+  {
+    description: "Metallica",
+    title: "For Whom The Bell Tolls",
+    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/album/7a1dlwArQK6OCHkr2SNlZR",
+    content: () => {
+      return (
+        <p>
+          Metallica, an iconic American heavy metal band, is renowned for their
+          powerful sound and intense performances that resonate deeply with
+          their audience. Formed in Los Angeles, California, they have become a
+          cultural icon in the heavy metal music industry. <br /> <br /> Their
+          songs often reflect themes of aggression, social issues, and personal
+          struggles, capturing the essence of the heavy metal genre. With a
+          career spanning over four decades, Metallica has released numerous hit
+          albums and singles that have garnered them a massive fan following
+          both in the United States and abroad.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Led Zeppelin",
+    title: "Stairway To Heaven",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5CQ30WqJwcep0pYcV4AMNc",
+    content: () => {
+      return (
+        <p>
+          Led Zeppelin, a legendary British rock band, is renowned for their
+          innovative sound and profound impact on the music industry. Formed in
+          London in 1968, they have become a cultural icon in the rock music
+          world. <br /> <br /> Their songs often reflect a blend of blues, hard
+          rock, and folk music, capturing the essence of the 1970s rock era.
+          With a career spanning over a decade, Led Zeppelin has released
+          numerous hit albums and singles that have garnered them a massive fan
+          following both in the United Kingdom and abroad.
+        </p>
+      );
+    },
+  },
   {
     description: "Lana Del Rey",
     title: "Summertime Sadness",
     src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
     ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://open.spotify.com/track/1Ist6PR2BZR3n2z2Y5R6S1",
     content: () => {
       return (
         <p>
@@ -30,7 +73,7 @@ const cards = [
     title: "Mitran Di Chhatri",
     src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
     ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://open.spotify.com/track/7j4fHkqftN5HkEYiDvgMMi",
     content: () => {
       return (
         <p>
@@ -49,54 +92,11 @@ const cards = [
   },
 
   {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Led Zeppelin",
-    title: "Stairway To Heaven",
-    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br /> Their songs often reflect a blend of blues, hard
-          rock, and folk music, capturing the essence of the 1970s rock era.
-          With a career spanning over a decade, Led Zeppelin has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United Kingdom and abroad.
-        </p>
-      );
-    },
-  },
-  {
     description: "Mustafa Zahid",
     title: "Toh Phir Aao",
     src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
     ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://open.spotify.com/track/4chxJYv0qsOKQukt6cKp97",
     content: () => {
       return (
         <p>
@@ -115,6 +115,10 @@ const cards = [
   },
 ];
 
-export default function ExpandableCardComponent() {
-  return <ExpandableCards cards={cards} />;
+export default function ExpandableCardComponent({
+  isOpen,
+}: {
+  isOpen?: boolean;
+}) {
+  return <ExpandableCards cards={cards} isOpen={isOpen} />;
 }

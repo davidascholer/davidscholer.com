@@ -4,38 +4,27 @@ export default function AnimatedTestimonialsComponent() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "While in school, I maintained a respectable gpa while working 40+ hours a week to pay tuition, rent, and other bills. I had to take many breaks to save up money to keep my head above water. Many of my professors at Seattle Central had taught or were teaching at UW as well so I spent close to 5 cumulative years (in terms of credits) there concurrently working on my bachelor's degree at a cheaper tuition rate and smaller class sizes.",
+      name: "Seattle Central College",
+      designation: "Associate Of Science - Dean's List",
+      designation2: "2008-2017",
+      src: "/seattlecentral.webp",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "I had attempted to complete my bachelor's degree but having no financial help, the tuition and course load were too much to handle. Everything I have learned since college significantly outweighs my final year of course material. College was just the beginning of my true studies in software engineering and app development.",
+      name: "University of Washington",
+      designation: "Electrical Engineering - Incomplete",
+      designation2: "2017-2018",
+      src: "/uw.webp",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "In lieu of my last year at University, I took the Full Stack Developer Certification course at North Seattle College. I already had nearly all of the required classes needed so the tuition was doable. It was a great experience and I learned a lot.",
+      name: "North Seattle College",
+      designation: "Full Stack Developer Certification",
+      designation2: "2018",
+      src: "/northseattle.webp",
     },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;

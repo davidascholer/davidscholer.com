@@ -8,8 +8,8 @@ interface TracingBeamComponentProps {
 
 export default function TracingBeamComponent({ children }: TracingBeamComponentProps) {
   return (
-    <TracingBeam className="px-6">
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+    <TracingBeam>
+      <div className="mx-auto antialiased relative">
        {children}
       </div>
     </TracingBeam>
