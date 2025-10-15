@@ -14,7 +14,7 @@ export default function MovingBorderComponent({
       <Button
         borderRadius="1.75rem"
         className={cn(
-          "bg-white dark:bg-[#000] text-black dark:text-white border-neutral-200 dark:border-slate-800",
+          "bg-gray-900 text-black dark:text-white border-neutral-200 dark:border-slate-800",
           className
         )}
       >

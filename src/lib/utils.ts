@@ -47,7 +47,7 @@ export const sendEmail = async ({
   msg: string;
 }): Promise<{ ok: boolean; status: number; error?: string }> => {
   const response = await fetchWithHeaders(
-    "https://socketshock-server-b8acf64c3cfc.herokuapp.com/email/email_me/",
+    "https://socketshock-server-b8acf64c3cfc.herokuapp.com/email/v1/domain/",
     {
       method: "POST",
       headers: {},

@@ -1,7 +1,7 @@
 import { FloatingDock } from "@/components/ui/FloatingDock";
 import {
   IconBrandGithubFilled,
-  IconBrandYoutubeFilled,
+  // IconBrandYoutubeFilled,
   IconBrandLinkedinFilled,
 } from "@tabler/icons-react";
 
@@ -21,13 +21,13 @@ export default function FloatingDockComponent() {
       ),
       href: "https://www.linkedin.com/in/david-scholer/",
     },
-    {
-      title: "YouTube",
-      icon: (
-        <IconBrandYoutubeFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://www.youtube.com/@hackrec9235",
-    },
+    // {
+    //   title: "YouTube",
+    //   icon: (
+    //     <IconBrandYoutubeFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "https://www.youtube.com/@hackrec9235",
+    // },
   ];
   return (
     <div className="flex items-center justify-center w-full mt-8">

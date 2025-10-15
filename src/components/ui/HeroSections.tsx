@@ -7,7 +7,7 @@
 import { motion, useAnimation } from "motion/react";
 import React from "react";
 import { useEffect, useRef } from "react";
-import { useInView } from "motion/react"
+import { useInView } from "motion/react";
 
 export function IntroHeroSection() {
   return (
@@ -20,7 +20,7 @@ export function IntroHeroSection() {
       </div>
       <div className="p-1">
         <h1 className="relative z-10 mx-auto text-center text-sm min-[400px]:text-xl min-[500px]:text-2xl font-bold text-slate-700 sm:text-3xl md:text-4xl lg:text-5xl dark:text-slate-300">
-          {"Full-stack, senior front-end software engineer and embedded systems developer."
+          {"Senior Software Engineer (Full-Stack and Embedded Systems)"
             .split(" ")
             .map((word, index) => (
               <React.Fragment key={index}>
@@ -53,17 +53,15 @@ export function IntroHeroSection() {
           }}
           className="relative z-10 mx-auto text-center text-sm min-[400px]:text-xl min-[500px]:text-md font-normal text-neutral-600 dark:text-neutral-400 p-4 --font-ancizar "
         >
-          A scalpel on the front end, proficient on the back end, with a decade
-          of experience writing software. I enjoy learning new tools, libraries,
-          languages, and technolgies to allow me to test and deploy my ideas
-          faster, while minimizing the potential for bugs so I can spend more
-          time on growing my skillset. I&apos;m a hardware guy at heart so when
-          I&apos;m not writing software, I&apos;m growing my knowledge of
-          computer networking, electronics engineering, and getting up to speed
-          with AI/LLMs.
-          <br/>
-          <br/>
-          In short, I am a believer in a growth mindset, open communication, and a hard days work. 
+          My experience includes 8 years of full-stack and native mobile app
+          development as well as 4 years of commercial achievement building
+          production software. I have built reliable, scalable pipelines for
+          successful startups from the ground up, written software for hardware
+          integrations, worked with teams of many sizes, and have built software
+          for a Fortune-500 company that had been field tested, QA reviewed, and
+          is still currently in production. I specialize In React Based
+          Front-End Systems and I am authorized to work in the US for any
+          employer.
         </motion.p>
       </div>
     </div>
@@ -80,18 +78,17 @@ export function VerticalListHeroSection({
 }) {
   // const [isVisible, setIsVisible] = useState(false);
   const componentRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(componentRef)
+  const isInView = useInView(componentRef);
   const controls = useAnimation();
 
   useEffect(() => {
     if (!isInView) {
       controls.start({ opacity: 0, filter: "blur(4px)", y: 10 });
     } else {
-       controls.start({ opacity: 1, filter: "blur(0px)", y: 0 }); // Reset without animation
+      controls.start({ opacity: 1, filter: "blur(0px)", y: 0 }); // Reset without animation
     }
   }, [controls, isInView]);
 
- 
   return (
     <div className="relative mx-auto flex flex-1 flex-col items-center justify-start px-14">
       <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
@@ -107,7 +104,6 @@ export function VerticalListHeroSection({
               // initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
               animate={controls}
               whileInView="onscreen"
-  
               transition={{
                 duration: 0.3,
                 delay: 0,
@@ -143,7 +139,6 @@ export function VerticalListHeroSection({
     </div>
   );
 }
-
 
 // export default function HeroSectionOne() {
 //   return (

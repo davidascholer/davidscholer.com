@@ -144,6 +144,7 @@ Jenkins
 Github Actions
 Nginx
 Gunicorn
+Docker
 
 -	-	-	-	-	-	-	-	-	-
 

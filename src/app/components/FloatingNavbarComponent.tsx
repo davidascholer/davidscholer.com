@@ -10,9 +10,9 @@ import {
 export default function FloatingNavComponent() {
   const navItems = [
     {
-      name: "Resume",
-      link: "#resume",
-      icon: <IconFileCv className="h-6 w-6 text-neutral-500 dark:text-white" />,
+      name: "Highlighted Skills",
+      link: "#highlights",
+      icon: <IconUsers className="h-6 w-6 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Contact",
@@ -33,10 +33,11 @@ export default function FloatingNavComponent() {
         <IconTerminal className="h-6 w-6 text-neutral-500 dark:text-white" />
       ),
     },
+
     {
-      name: "Highlighted Skills",
-      link: "#highlight",
-      icon: <IconUsers className="h-6 w-6 text-neutral-500 dark:text-white" />,
+      name: "Resume",
+      link: "#resume",
+      icon: <IconFileCv className="h-6 w-6 text-neutral-500 dark:text-white" />,
     },
   ];
   return (
