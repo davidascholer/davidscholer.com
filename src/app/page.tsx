@@ -88,7 +88,7 @@ export default function Home() {
                 window.open("https://vamplitude.com", "_blank");
               }}
             >
-              {`View my "Funhouse of Skills" portfolio I did in college at Vamplitude.com`}
+              {`View my "Funhouse of Skills" portfolio I did just after college at Vamplitude.com`}
             </button>
           </div>
 
