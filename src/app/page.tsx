@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 
 import FloatingNavComponent from "./components/FloatingNavbarComponent";
 import TypewriterEffectComponent from "./components/TypeWriteEffectComponent";
@@ -63,6 +64,9 @@ const AnimatedHeader = ({
 };
 
 export default function Home() {
+  useEffect(() => {
+    window.location.replace("https://socketshock.com");
+  }, []);
   return (
     <div className="pb-24 overflow-hidden">
       <Toaster />
